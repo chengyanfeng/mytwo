@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--1.理论上，我们可以任意定义namespace的命名，只是唯一定义一个唯一的mapper，相当于mapper的唯一id,
+用来识别，但是要是与接口绑定我们一定要引用接口的全类名-->
+<!--<mapper namespace="mybatis.cheng.beans.chengyaneng">-->
+<!--测试与接口的绑定，用接口的全类名 -->
+<mapper namespace="cheng.Dao.companyMapper" >
+
+
+    <select id="test" resultType="cheng.beans.company" >
+
+        select * from company
+        where id=#{id}
+
+    </select>
+
+
+
+
+
+
+
+    </mapper>
